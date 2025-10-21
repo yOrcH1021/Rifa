@@ -328,7 +328,7 @@ table a.must {
     height: auto;
 }
 .admin > a {
-    position: absolute;
+    position: fixed;
     left: 10px;
     top: 10px;
 }
@@ -414,7 +414,7 @@ form + table td {
     align-items: center;
     font-size: 10px;
     padding: 0 5px;
-    width: 80px;
+    width: 65px;
 }
 form + table td p {
     text-overflow: ellipsis;

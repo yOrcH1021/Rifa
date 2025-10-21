@@ -215,6 +215,7 @@ section#card {
     position: relative;
 }
 
+section#card .shop-card,
 section#card button {
     background: transparent;
     position: absolute;
@@ -223,6 +224,11 @@ section#card button {
     display: flex;
     right: 10px;
     top: 10px;
+}
+
+section#card .shop-card {
+    right: auto;
+    left: 10px;
 }
 
 section #grupo-numeros {
@@ -402,7 +408,7 @@ form + table td {
     align-items: center;
     font-size: 10px;
     padding: 0 5px;
-    width: 62px;
+    width: 75px;
 }
 form + table th:first-child,
 form + table td:first-child,

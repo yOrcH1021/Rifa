@@ -36,7 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const tdNombre = document.createElement("td");
             const tdCelular = document.createElement("td");
-            const tdEstado = document.createElement("td");
             const tdAcciones = document.createElement("td");
 
             const btnEditar = document.createElement("a");
@@ -57,7 +56,6 @@ document.addEventListener("DOMContentLoaded", () => {
             fila.appendChild(tdNumero);
             fila.appendChild(tdNombre);
             fila.appendChild(tdCelular);
-            fila.appendChild(tdEstado);
             fila.appendChild(tdAcciones);
 
             tablaBoletas.querySelector("tbody").appendChild(fila);
@@ -65,12 +63,6 @@ document.addEventListener("DOMContentLoaded", () => {
             // Aplicar datos si existen
             tdNombre.textContent = boletas[numero].nombre;
             tdCelular.textContent = boletas[numero].celular;
-            tdEstado.textContent =
-                boletas[numero].estado === "payment"
-                    ? "CANCELADA"
-                    : boletas[numero].estado === "must"
-                        ? "SIN PAGAR"
-                        : "";
 
             fila.classList.remove("payment-row", "must-row");
             if (boletas[numero].estado === "payment") {
@@ -93,8 +85,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
             fila.children[1].textContent = nombre;
             fila.children[2].textContent = celular;
-            fila.children[3].textContent =
-                estado === "payment" ? "CANCELADA" : estado === "must" ? "SIN PAGAR" : "";
 
             fila.classList.remove("payment-row", "must-row");
             if (estado === "payment") {

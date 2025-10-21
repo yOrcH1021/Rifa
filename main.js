@@ -61,7 +61,10 @@ document.addEventListener("DOMContentLoaded", () => {
             tablaBoletas.querySelector("tbody").appendChild(fila);
 
             // Aplicar datos si existen
-            tdNombre.textContent = boletas[numero].nombre;
+            const pNombre = document.createElement("p");
+            pNombre.textContent = boletas[numero].nombre;
+            tdNombre.appendChild(pNombre);
+
             tdCelular.textContent = boletas[numero].celular;
 
             fila.classList.remove("payment-row", "must-row");
@@ -83,7 +86,12 @@ document.addEventListener("DOMContentLoaded", () => {
             boletas[numero] = { nombre, celular, estado };
             localStorage.setItem("boletasData", JSON.stringify(boletas));
 
-            fila.children[1].textContent = nombre;
+            const tdNombre = fila.children[1];
+            tdNombre.innerHTML = ""; // Limpia el contenido anterior
+            const pNombre = document.createElement("p");
+            pNombre.textContent = nombre;
+            tdNombre.appendChild(pNombre);
+
             fila.children[2].textContent = celular;
 
             fila.classList.remove("payment-row", "must-row");

@@ -327,6 +327,12 @@ table a.must {
 .admin {
     height: auto;
 }
+.admin > a {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
 .payment-row {
     background-color: #018841;
 }
@@ -408,7 +414,16 @@ form + table td {
     align-items: center;
     font-size: 10px;
     padding: 0 5px;
-    width: 75px;
+    width: 80px;
+}
+form + table td p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+form + table th:nth-child(3),
+form + table td:nth-child(3) {
+    width: 55px;
 }
 form + table th:first-child,
 form + table td:first-child,

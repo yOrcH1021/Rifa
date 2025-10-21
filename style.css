@@ -1,0 +1,437 @@
+html,
+body {
+    height: 100%;
+}
+
+html {
+    background: #018841;
+    background-image: url(img/coins.png);
+    background-repeat: repeat;
+    background-size: contain;
+}
+
+body {
+    /* overflow: hidden; */
+}
+
+* {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0;
+}
+
+.ray {
+    pointer-events: none;
+    position: fixed;
+    opacity: .04;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    top: 0;
+}
+
+/* COLOR */
+.white-txt {
+    color: #ffffff;
+}
+
+.white-bg {
+    background: #ffffff;
+}
+
+.black-txt {
+    color: #000000;
+}
+
+.black-bg {
+    background: #000000;
+}
+
+.green-txt {
+    color: #018841;
+}
+
+.green-bg {
+    background: #018841;
+}
+
+.beige-txt {
+    color: #f5eac5;
+}
+
+.beige-bg {
+    background: #f5eac5;
+}
+
+.yellow-txt {
+    color: #f5d315;
+}
+
+.yellow-bg {
+    background: #f5d315;
+}
+
+.red-txt {
+    color: #b20202;
+}
+
+.red-bg {
+    background: #b20202;
+}
+
+/* DISPLAY */
+.display-flex {
+    display: flex !important;
+}
+
+.display-none {
+    display: none !important;
+}
+
+/* ZOOM */
+.zoom-05 {
+    zoom: 0.5;
+}
+
+.zoom-1 {
+    zoom: 1;
+}
+
+.zoom-15 {
+    zoom: 1.5;
+}
+
+.zoom-2 {
+    zoom: 2;
+}
+
+/* ALIGN */
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* WEIGHT */
+.font-weight-lighter {
+    font-weight: lighter;
+}
+
+.font-weight-normal {
+    font-weight: normal;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+/* ROTATE */
+.rotate {
+    transform: rotate(-1deg);
+}
+
+/* SHADOW */
+.shadow-text {
+    text-shadow: 2px 2px rgb(0 0 0 / 25%);
+}
+
+/* COIN */
+.coin {
+    position: absolute;
+}
+
+/* BUTTON */
+button {
+    outline: none;
+    border: none;
+    padding: 0;
+}
+
+button.button {
+    cursor: pointer;
+}
+
+.button {
+    box-shadow: 1px 1px 0 0 rgb(0 0 0 / 25%);
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+/* MAIN */
+main {
+    height: 100%;
+}
+
+/* HEADER */
+header {
+    justify-content: space-between;
+    height: calc(100% - 40px);
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    z-index: 1;
+}
+
+header h1 {
+    line-height: 30px;
+}
+
+section {
+    justify-content: space-between;
+    height: calc(100% - 40px);
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    width: 100%;
+    z-index: 1;
+}
+
+section div {
+    display: flex;
+}
+
+section span {
+    box-shadow: 2px 2px 0 0 rgb(0 0 0 / 25%);
+    margin-right: 5px;
+    display: flex;
+    height: 15px;
+    width: 15px;
+}
+
+section#card {
+    justify-content: center;
+    position: relative;
+}
+
+section#card button {
+    background: transparent;
+    position: absolute;
+    box-shadow: none;
+    cursor: pointer;
+    display: flex;
+    right: 10px;
+    top: 10px;
+}
+
+section #grupo-numeros {
+    box-shadow: 2px 2px 0 0 rgb(0 0 0 / 25%);
+    flex-direction: column;
+    background: #f5eac5;
+    border-radius: 10px;
+    padding: 20px 10px;
+    display: flex;
+}
+
+section #grupo-numeros div {
+    justify-content: center;
+    font-size: 18px;
+    width: 50px;
+}
+
+.group-number-wrap {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+}
+
+.group-number-wrap h1 {
+    box-shadow: 2px 2px 0 0 rgb(0 0 0 / 25%);
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 5px;
+    display: flex;
+    height: 40px;
+    width: 50px;
+}
+
+.group-number-wrap h6 {
+    margin-top: 35px;
+}
+
+.group-number-wrap div {
+    flex-direction: column;
+    display: flex;
+}
+
+.group-number-wrap div a {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+/* TABLE */
+table {
+    border-collapse: collapse;
+}
+
+table tr {
+    margin-bottom: -1px;
+    display: flex;
+}
+
+table td {
+    margin-right: -1px;
+    text-align: center;
+    border: 1px solid;
+    display: flex;
+    padding: 0;
+}
+
+table a {
+    justify-content: center;
+    background: #f5eac5;
+    text-decoration: none;
+    align-items: center;
+    color: #000000;
+    font-size: 10px;
+    cursor: pointer;
+    display: flex;
+    height: 22px;
+    width: 22px;
+}
+
+table a:not(.payment):not(.must):hover {
+    opacity: .9;
+}
+
+table a.payment {
+    background: #018841;
+    color: #f5eac5;
+}
+
+table a.must {
+    background: #b20202;
+    color: #f5eac5;
+}
+
+/* ADMIN */
+.admin {
+    height: auto;
+}
+.payment-row {
+    background-color: #018841;
+}
+.payment-row * {
+    border-color: #000000 !important;
+    color: #f5eac5;
+}
+
+.must-row {
+    background-color: #b20202;
+}
+.must-row * {
+    border-color: #000000 !important;
+    color: #f5eac5;
+}
+    
+form {
+    margin-bottom: 20px;
+}
+form h2 {
+    margin-bottom: 25px;
+    align-items: center;
+    display: flex;
+}
+form h2 * {
+    box-shadow: 2px 2px 0 0 rgb(0 0 0 / 25%);
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-left: 5px;
+}
+
+form > div {
+    flex-direction: column;
+    align-items: end;
+}
+form div > div {
+    margin-bottom: 5px;
+}
+form label {
+    margin-right: 5px;
+    text-align: right;
+    width: 70px;
+}
+form input {
+    box-shadow: 2px 2px 0 0 rgb(0 0 0 / 25%);
+    background: #f5eac5;
+    border-radius: 10px;
+    padding: 0 10px;
+    outline: none;
+    height: 22px;
+    width: 100px;
+    border: 0;
+}
+form button {
+    box-shadow: 2px 2px 0 0 rgb(0 0 0 / 25%);
+    background: #f5d315;
+    padding-bottom: 2px;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 22px;
+    width: 120px;
+}
+
+form + table tbody {
+    background: #f5eac5;
+}
+form + table th {
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    border-bottom: none;
+    display: flex;
+}
+form + table th + th {
+    margin-left: -1px;
+}
+form + table th,
+form + table td {
+    align-items: center;
+    font-size: 10px;
+    padding: 0 5px;
+    width: 62px;
+}
+form + table th:first-child,
+form + table td:first-child,
+form + table th:last-child,
+form + table td:last-child {
+    justify-content: center;
+    height: 22px;
+    width: 22px;
+    padding: 0;
+}
+form + table td:nth-child(4) {
+    justify-content: center;
+}
+form + table a {
+    display: flex !important;
+    justify-content: center;
+    background: transparent;
+    align-items: center;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+}
+form + table a span {
+    font-size: 12px !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+}

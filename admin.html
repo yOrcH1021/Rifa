@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="main.js"></script>
+    <title>¡ATRAPA LA SUERTE!</title>
+</head>
+<body class="zoom-15">
+    <main>
+        <img src="img/ray-bg.png" class="ray" alt="ray-bg">
+        <section class="admin" id="top">
+            <form id="formulario-edicion" class="display-none">
+                <h2 class="shadow-text beige-txt">Editar Boleta <p id="boleta-editando" class="yellow-bg green-txt"></p></h2>
+                <div>
+                    <div>
+                        <label>Nombre:</label>
+                        <input type="text" id="input-nombre" />
+                    </div>
+                    <div>
+                        <label>Celular:</label>
+                        <input type="text" id="input-celular" />
+                    </div>
+                    <div>
+                        <label>Estado:</label>
+                        <select id="input-estado">
+                            <option value=""></option>
+                            <option value="payment">Pagada</option>
+                            <option value="must">Sin pagar</option>
+                        </select>
+                    </div>
+                    <button id="guardar-boleta">Guardar</button>
+                </div>
+            </form>
+            <table id="tabla-boletas">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nombre</th>
+                        <th>Celular</th>
+                        <th>Estado</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Se generan dinámicamente desde JS -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

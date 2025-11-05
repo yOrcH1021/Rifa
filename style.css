@@ -231,6 +231,11 @@ section#card .shop-card {
     left: 10px;
 }
 
+section#card .shop-card em,
+section#card button em {
+    font-size: 18px;
+}
+
 section #grupo-numeros {
     box-shadow: 2px 2px 0 0 rgb(0 0 0 / 25%);
     flex-direction: column;
@@ -331,6 +336,10 @@ table a.must {
     position: fixed;
     left: 10px;
     top: 10px;
+}
+
+.admin > a em {
+    font-size: 18px;
 }
 
 .payment-row {

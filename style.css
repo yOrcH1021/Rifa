@@ -455,10 +455,7 @@ form + table a span {
 
 /* MOBILE */
 @media (max-width: 991px) {
-    /* html {
-        background: red;
-    } */
     body {
-        zoom: 1.5;
+        zoom: 1.6;
     }
 }

@@ -229,6 +229,7 @@ section#card button {
 }
 
 section#card .shop-card {
+    text-decoration: none;
     right: auto;
     left: 10px;
 }

@@ -58,11 +58,11 @@ body {
 }
 
 .beige-txt {
-    color: #f5eac5;
+    color: #f8f0d5;
 }
 
 .beige-bg {
-    background: #f5eac5;
+    background: #f8f0d5;
 }
 
 .yellow-txt {
@@ -149,6 +149,17 @@ button.button {
     padding: 5px 10px;
 }
 
+select {
+    box-shadow: 2px 2px 0 0 rgb(0 0 0 / 25%);
+    border: none;
+    border-radius: 100px;
+    outline: none;
+    width: 120px;
+    padding: 0 5px;
+    background: #f8f0d5;
+    height: 22px;
+}
+
 /* MAIN */
 main {
     height: 100%;
@@ -230,7 +241,7 @@ section#card button em {
 section #grupo-numeros {
     box-shadow: 2px 2px 0 0 rgb(0 0 0 / 25%);
     flex-direction: column;
-    background: #f5eac5;
+    background: #f8f0d5;
     border-radius: 10px;
     padding: 20px 10px;
     display: flex;
@@ -294,7 +305,7 @@ table td {
 
 table a {
     justify-content: center;
-    background: #f5eac5;
+    background: #f8f0d5;
     text-decoration: none;
     align-items: center;
     color: #000000;
@@ -311,12 +322,12 @@ table a:not(.payment):not(.must):hover {
 
 table a.payment {
     background: #018841;
-    color: #f5eac5;
+    color: #f8f0d5;
 }
 
 table a.must {
     background: #b20202;
-    color: #f5eac5;
+    color: #f8f0d5;
 }
 
 /* ADMIN */
@@ -338,7 +349,7 @@ table a.must {
 }
 .payment-row * {
     border-color: #000000 !important;
-    color: #f5eac5;
+    color: #f8f0d5;
 }
 
 .must-row {
@@ -346,7 +357,7 @@ table a.must {
 }
 .must-row * {
     border-color: #000000 !important;
-    color: #f5eac5;
+    color: #f8f0d5;
 }
     
 form {
@@ -378,7 +389,7 @@ form label {
 }
 form input {
     box-shadow: 2px 2px 0 0 rgb(0 0 0 / 25%);
-    background: #f5eac5;
+    background: #f8f0d5;
     border-radius: 10px;
     padding: 0 10px;
     outline: none;
@@ -397,7 +408,7 @@ form button {
 }
 
 form + table tbody {
-    background: #f5eac5;
+    background: #f8f0d5;
 }
 form + table th {
     justify-content: center;

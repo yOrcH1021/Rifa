@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    /* overflow: hidden; */
+    zoom: 2;
 }
 
 * {
@@ -87,23 +87,6 @@ body {
 
 .display-none {
     display: none !important;
-}
-
-/* ZOOM */
-.zoom-05 {
-    zoom: 0.5;
-}
-
-.zoom-1 {
-    zoom: 1;
-}
-
-.zoom-15 {
-    zoom: 1.5;
-}
-
-.zoom-2 {
-    zoom: 2;
 }
 
 /* ALIGN */
@@ -464,4 +447,14 @@ form + table a span {
     box-shadow: none;
     padding: 0;
     margin: 0;
+}
+
+/* MOBILE */
+@media (max-width: 991px) {
+    /* html {
+        background: red;
+    } */
+    body {
+        zoom: 1;
+    }
 }

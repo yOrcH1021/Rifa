@@ -456,6 +456,6 @@ form + table a span {
 /* MOBILE */
 @media (max-width: 991px) {
     body {
-        zoom: 1.6;
+        zoom: 1.5;
     }
 }

@@ -449,6 +449,10 @@ form + table a span {
     margin: 0;
 }
 
+.reset {
+  margin-top: 26px;
+}
+
 /* MOBILE */
 @media (max-width: 991px) {
     /* html {

@@ -104,6 +104,26 @@ document.addEventListener("DOMContentLoaded", () => {
             formulario.classList.add("display-none");
         });
 
+        const resetBtn = document.getElementById("reset-boletas");
+        resetBtn.addEventListener("click", () => {
+            const confirmar = confirm("¿Quieres borrar todos los datos de las boletas?");
+            if (!confirmar) return;
+
+            // Vaciar el objeto boletas
+            for (let i = 0; i < 100; i++) {
+                const numero = i.toString().padStart(2, "0");
+                boletas[numero] = { nombre: "", celular: "", estado: "" };
+
+                const fila = tablaBoletas.querySelector(`tr[data-numero="${numero}"]`);
+                fila.children[1].innerHTML = "<p></p>"; // nombre vacío
+                fila.children[2].textContent = ""; // celular vacío
+                fila.classList.remove("payment-row", "must-row"); // quitar color
+            }
+
+            // Guardar en localStorage
+            localStorage.setItem("boletasData", JSON.stringify(boletas));
+        });
+
         return; // No ejecutar la lógica de index.html
     }
 

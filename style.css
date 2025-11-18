@@ -154,7 +154,7 @@ select {
     border: none;
     border-radius: 100px;
     outline: none;
-    width: 120px;
+    width: calc(50% + 20px);
     padding: 0 5px;
     background: #f8f0d5;
     height: 22px;
@@ -201,6 +201,7 @@ section {
 }
 
 section div {
+    align-items: center;
     display: flex;
 }
 
@@ -273,7 +274,7 @@ section #grupo-numeros div {
 }
 
 .group-number-wrap h6 {
-    margin-top: 35px;
+    margin-top: 10px;
 }
 
 .group-number-wrap div {
@@ -381,12 +382,15 @@ form > div {
     align-items: end;
 }
 form div > div {
+    justify-content: center;
     margin-bottom: 5px;
+    padding: 0 5%;
+    width: 100%;
 }
 form label {
     margin-right: 5px;
     text-align: right;
-    width: 70px;
+    width: 50%;
 }
 form input {
     box-shadow: 2px 2px 0 0 rgb(0 0 0 / 25%);
@@ -395,7 +399,7 @@ form input {
     padding: 0 10px;
     outline: none;
     height: 22px;
-    width: 100px;
+    width: 50%;
     border: 0;
 }
 form button {
@@ -485,5 +489,139 @@ form + table a span {
 @media (max-width: 991px) {
     body {
         zoom: 1.5;
+    }
+}
+@media (max-width: 768px) {
+    body {
+        zoom: 1;
+    }
+    h1 {
+        line-height: 13vw !important;
+        font-size: 13.5vw;
+    }
+    h2 {
+        font-size: 10vw;
+    }
+    h3 {
+        font-size: 7.75vw;
+    }
+    h4 {
+        font-size: 6.5vw;
+    }
+    h5 {
+        font-size: 5.55vw;
+    }
+    h6 {
+        font-size: 4.5vw;
+    }
+    .button {
+        box-shadow: 1vw 1vw 0 0 rgb(0 0 0 / 25%);
+        border-radius: 4vw;
+        font-size: 6.75vw;
+        padding: 2vw 4vw;
+    }
+    .shadow-text {
+        text-shadow: 1vw 1vw rgb(0 0 0 / 25%);
+    }
+    section#card .shop-card,
+    section#card button {
+        right: 4vw;
+        top: 4vw;
+    }
+    section#card .shop-card {
+        left: 4vw;
+    }
+    section#card .shop-card em,
+    section#card button em {
+        font-size: 8vw;
+    }
+    section #grupo-numeros {
+        padding: 8vw 4vw;
+
+    }
+    section #grupo-numeros div {
+        font-size: 7.5vw;
+        width: 21vw;
+    }
+    section span {
+        box-shadow: 1vw 1vw 0 0 rgb(0 0 0 / 25%);
+    }
+    section,
+    header {
+        height: calc(100% - 20vw);
+        padding: 10vw 0;
+    }
+    header a {
+        font-size: 4.5vw;
+    }
+    header h5 span {
+        font-size: 7.5vw;
+    }
+    table td,
+    table th {
+        border-width: 0.5vw !important;
+    }
+    table a,
+    section span {
+        font-size: 4.25vw;
+        height: 8vw;
+        width: 8vw;
+    }
+    .group-number-wrap {
+        width: 50vw;
+    }
+    .group-number-wrap h1 {
+        padding: 2.5vw;
+        width: auto;
+    }
+    .group-number-wrap h6 {
+        margin-top: 12vw;
+    }
+    .group-number-wrap div a,
+    .reset {
+        font-size: 5vw;
+    }
+    .reset em {
+        font-size: 6.5vw;
+    }
+    .admin > a {
+        left: 4vw;
+        top: 4vw;
+    }
+    .admin > a em {
+        font-size: 8vw;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    form input,
+    form label {
+        font-size: 4.25vw;
+        width: 40vw;
+    }
+    form select,
+    form button {
+        width: 45.555555vw;
+    }
+    form + table th,
+    form + table td {
+        font-size: 4.25vw;
+        width: 25vw;
+    }
+    form + table th:nth-child(3),
+    form + table td:nth-child(3) {
+        width: 25vw;
+    }
+    form + table th:first-child,
+    form + table td:first-child,
+    form + table th:last-child,
+    form + table td:last-child {
+        height: 8vw;
+        width: 8vw;
+    }
+    form + table a span {
+        font-size: 5vw;
     }
 }

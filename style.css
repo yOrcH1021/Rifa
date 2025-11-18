@@ -557,10 +557,10 @@ form + table a span {
     header h5 span {
         font-size: 7.5vw;
     }
-    table td,
+    /* table td,
     table th {
         border-width: 0.5vw !important;
-    }
+    } */
     table a,
     section span {
         font-size: 4.25vw;
@@ -596,6 +596,9 @@ form + table a span {
         flex-direction: column;
         align-items: center;
     }
+    form h2 p {
+        text-shadow: 1vw 1vw rgb(0 0 0 / 15%);
+    }
     form input,
     form label {
         border-radius: 3vw;
@@ -627,6 +630,6 @@ form + table a span {
         width: 8vw;
     }
     form + table a span {
-        font-size: 5vw;
+        font-size: 5vw !important;
     }
 }

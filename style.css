@@ -598,12 +598,17 @@ form + table a span {
     }
     form input,
     form label {
-        font-size: 4.25vw;
+        border-radius: 3vw;
+        font-size: 5.5vw;
+        height: 9vw;
         width: 40vw;
     }
     form select,
     form button {
+        border-radius: 3vw;
         width: 45.555555vw;
+        font-size: 5.5vw;
+        height: 9vw;
     }
     form + table th,
     form + table td {
